@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>3 Zonne-energie | De energietransitie doorgerekend</title>
+  <meta name="description" content="Rekenen aan de energietransitie, met name op de fluctuerende opbrengsten van hernieuwbare energiebronnen." />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="3 Zonne-energie | De energietransitie doorgerekend" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Rekenen aan de energietransitie, met name op de fluctuerende opbrengsten van hernieuwbare energiebronnen." />
+  <meta name="github-repo" content="energiemix" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="3 Zonne-energie | De energietransitie doorgerekend" />
+  
+  <meta name="twitter:description" content="Rekenen aan de energietransitie, met name op de fluctuerende opbrengsten van hernieuwbare energiebronnen." />
+  
+
+<meta name="author" content="P. Maas" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="windenergie.html"/>
+<link rel="next" href="opslag.html"/>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="energiemix.github.io"><b>De energietransitie doorgerekend</b></a>
+<a href="./voor-knud.html"><i>Toewijding</i></a>
+</li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Aan de proeflezer</a></li>
+<li class="chapter" data-level="" data-path="inleiding.html"><a href="inleiding.html"><i class="fa fa-check"></i>Inleiding</a></li>
+<li class="chapter" data-level="1" data-path="verbruik.html"><a href="verbruik.html"><i class="fa fa-check"></i><b>1</b> Verbruik</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="verbruik.html"><a href="verbruik.html#bronnen"><i class="fa fa-check"></i><b>1.1</b> Bronnen</a></li>
+<li class="chapter" data-level="1.2" data-path="verbruik.html"><a href="verbruik.html#omzettingen"><i class="fa fa-check"></i><b>1.2</b> Omzettingen</a></li>
+<li class="chapter" data-level="1.3" data-path="verbruik.html"><a href="verbruik.html#afnemers"><i class="fa fa-check"></i><b>1.3</b> Afnemers</a></li>
+<li class="chapter" data-level="1.4" data-path="verbruik.html"><a href="verbruik.html#verbruik-1"><i class="fa fa-check"></i><b>1.4</b> Verbruik</a></li>
+<li class="chapter" data-level="1.5" data-path="verbruik.html"><a href="verbruik.html#transitie"><i class="fa fa-check"></i><b>1.5</b> Transitie</a></li>
+<li class="chapter" data-level="1.6" data-path="verbruik.html"><a href="verbruik.html#besparen"><i class="fa fa-check"></i><b>1.6</b> Besparen</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="windenergie.html"><a href="windenergie.html"><i class="fa fa-check"></i><b>2</b> Windenergie</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="windenergie.html"><a href="windenergie.html#energie-uit-wind"><i class="fa fa-check"></i><b>2.1</b> Energie uit wind</a></li>
+<li class="chapter" data-level="2.2" data-path="windenergie.html"><a href="windenergie.html#de-energieopbrengst-van-windmolens"><i class="fa fa-check"></i><b>2.2</b> De energieopbrengst van windmolens</a></li>
+<li class="chapter" data-level="2.3" data-path="windenergie.html"><a href="windenergie.html#ruimtegebruik"><i class="fa fa-check"></i><b>2.3</b> Ruimtegebruik</a></li>
+<li class="chapter" data-level="2.4" data-path="windenergie.html"><a href="windenergie.html#opbrengstfluctuaties"><i class="fa fa-check"></i><b>2.4</b> Opbrengstfluctuaties</a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="windenergie.html"><a href="windenergie.html#windarme-maanden"><i class="fa fa-check"></i><b>2.4.1</b> Windarme maanden</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="windenergie.html"><a href="windenergie.html#fluctuaties-opvangen-met-opslag"><i class="fa fa-check"></i><b>2.5</b> Fluctuaties opvangen met opslag</a></li>
+<li class="chapter" data-level="2.6" data-path="windenergie.html"><a href="windenergie.html#fluctuaties-opvangen-met-een-hulpbron"><i class="fa fa-check"></i><b>2.6</b> Fluctuaties opvangen met een hulpbron</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="zonne-energie.html"><a href="zonne-energie.html"><i class="fa fa-check"></i><b>3</b> Zonne-energie</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="zonne-energie.html"><a href="zonne-energie.html#variatie-in-zonneschijn"><i class="fa fa-check"></i><b>3.1</b> Variatie in zonneschijn</a></li>
+<li class="chapter" data-level="3.2" data-path="zonne-energie.html"><a href="zonne-energie.html#de-energie-opbrengst-van-zonnecellen"><i class="fa fa-check"></i><b>3.2</b> De energie-opbrengst van zonnecellen</a></li>
+<li class="chapter" data-level="3.3" data-path="zonne-energie.html"><a href="zonne-energie.html#ruimtegebruik-1"><i class="fa fa-check"></i><b>3.3</b> Ruimtegebruik</a></li>
+<li class="chapter" data-level="3.4" data-path="zonne-energie.html"><a href="zonne-energie.html#opbrengstfluctuaties-1"><i class="fa fa-check"></i><b>3.4</b> Opbrengstfluctuaties</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="zonne-energie.html"><a href="zonne-energie.html#zonarme-maanden"><i class="fa fa-check"></i><b>3.4.1</b> Zonarme maanden</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="zonne-energie.html"><a href="zonne-energie.html#fluctuaties-opvangen-met-opslag-1"><i class="fa fa-check"></i><b>3.5</b> Fluctuaties opvangen met opslag</a></li>
+<li class="chapter" data-level="3.6" data-path="zonne-energie.html"><a href="zonne-energie.html#zonne-energie-in-combinatie-met-een-hulpbron"><i class="fa fa-check"></i><b>3.6</b> Zonne-energie in combinatie met een hulpbron</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="opslag.html"><a href="opslag.html"><i class="fa fa-check"></i><b>4</b> Opslag</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="opslag.html"><a href="opslag.html#spaarbekkens"><i class="fa fa-check"></i><b>4.1</b> Spaarbekkens</a></li>
+<li class="chapter" data-level="4.2" data-path="opslag.html"><a href="opslag.html#accus"><i class="fa fa-check"></i><b>4.2</b> Accu’s</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="opslag.html"><a href="opslag.html#lithium"><i class="fa fa-check"></i><b>4.2.1</b> Lithium</a></li>
+<li class="chapter" data-level="4.2.2" data-path="opslag.html"><a href="opslag.html#lood"><i class="fa fa-check"></i><b>4.2.2</b> Lood</a></li>
+<li class="chapter" data-level="4.2.3" data-path="opslag.html"><a href="opslag.html#grondstoffen"><i class="fa fa-check"></i><b>4.2.3</b> Grondstoffen</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="opslag.html"><a href="opslag.html#waterstof"><i class="fa fa-check"></i><b>4.3</b> Waterstof</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="opslag.html"><a href="opslag.html#efficiëntie"><i class="fa fa-check"></i><b>4.3.1</b> Efficiëntie</a></li>
+<li class="chapter" data-level="4.3.2" data-path="opslag.html"><a href="opslag.html#infrastructuur"><i class="fa fa-check"></i><b>4.3.2</b> Infrastructuur</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="de-energiemix.html"><a href="de-energiemix.html"><i class="fa fa-check"></i><b>5</b> De energiemix</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="de-energiemix.html"><a href="de-energiemix.html#het-model"><i class="fa fa-check"></i><b>5.1</b> Het model</a></li>
+<li class="chapter" data-level="5.2" data-path="de-energiemix.html"><a href="de-energiemix.html#een-dag-energieopwekking"><i class="fa fa-check"></i><b>5.2</b> Een dag energieopwekking</a></li>
+<li class="chapter" data-level="5.3" data-path="de-energiemix.html"><a href="de-energiemix.html#uitvoer-van-het-model"><i class="fa fa-check"></i><b>5.3</b> Uitvoer van het model</a></li>
+<li class="chapter" data-level="5.4" data-path="de-energiemix.html"><a href="de-energiemix.html#de-energiemix-in-simulatie"><i class="fa fa-check"></i><b>5.4</b> De energiemix in simulatie</a>
+<ul>
+<li class="chapter" data-level="5.4.1" data-path="de-energiemix.html"><a href="de-energiemix.html#kan-een-combinatie-van-wind--en-zonne-energie-nederland-continu-van-energie-voorzien"><i class="fa fa-check"></i><b>5.4.1</b> Kan een combinatie van wind- en zonne-energie Nederland continu van energie voorzien?</a></li>
+<li class="chapter" data-level="5.4.2" data-path="de-energiemix.html"><a href="de-energiemix.html#kunnen-fluctuaties-worden-opgevangen-door-elektrische-autos-als-energiebuffer-te-gebruiken"><i class="fa fa-check"></i><b>5.4.2</b> Kunnen fluctuaties worden opgevangen door elektrische auto’s als energiebuffer te gebruiken?</a></li>
+<li class="chapter" data-level="5.4.3" data-path="de-energiemix.html"><a href="de-energiemix.html#hoe-effectief-is-windenergie-op-land"><i class="fa fa-check"></i><b>5.4.3</b> Hoe effectief is windenergie op land?</a></li>
+<li class="chapter" data-level="5.4.4" data-path="de-energiemix.html"><a href="de-energiemix.html#schone-energie-zonder-kernenergie-kan-dat"><i class="fa fa-check"></i><b>5.4.4</b> Schone energie zonder kernenergie: kan dat?</a></li>
+<li class="chapter" data-level="5.4.5" data-path="de-energiemix.html"><a href="de-energiemix.html#hoe-ziet-een-energiemix-met-alleen-kernenergie-er-uit"><i class="fa fa-check"></i><b>5.4.5</b> Hoe ziet een energiemix met alleen kernenergie er uit?</a></li>
+<li class="chapter" data-level="5.4.6" data-path="de-energiemix.html"><a href="de-energiemix.html#kan-beperkte-inzet-van-kernenergie-de-fluctuaties-van-wind-en-zon-opvangen"><i class="fa fa-check"></i><b>5.4.6</b> Kan beperkte inzet van kernenergie de fluctuaties van wind en zon opvangen?</a></li>
+<li class="chapter" data-level="5.4.7" data-path="de-energiemix.html"><a href="de-energiemix.html#zonne-energie-is-veel-efficiënter-dan-wind.-kunnen-we-het-niet-redden-met-de-zon-alleen"><i class="fa fa-check"></i><b>5.4.7</b> Zonne-energie is veel efficiënter dan wind. Kunnen we het niet redden met de zon alleen?</a></li>
+<li class="chapter" data-level="5.4.8" data-path="de-energiemix.html"><a href="de-energiemix.html#helpt-besparen-bij-de-opvang-van-fluctuaties"><i class="fa fa-check"></i><b>5.4.8</b> Helpt besparen bij de opvang van fluctuaties?</a></li>
+<li class="chapter" data-level="5.4.9" data-path="de-energiemix.html"><a href="de-energiemix.html#kan-beperkte-inzet-van-fossiele-brandstoffen-gebruikt-worden-om-fluctuaties-op-te-vangen-terwijl-we-wachten-op-innovatie"><i class="fa fa-check"></i><b>5.4.9</b> Kan beperkte inzet van fossiele brandstoffen gebruikt worden om fluctuaties op te vangen, terwijl we wachten op innovatie?</a></li>
+<li class="chapter" data-level="5.4.10" data-path="de-energiemix.html"><a href="de-energiemix.html#tabeltoelichting"><i class="fa fa-check"></i><b>5.4.10</b> Tabeltoelichting</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="epiloog.html"><a href="epiloog.html"><i class="fa fa-check"></i>Epiloog</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li class="chapter" data-level="A" data-path="windenergie-1.html"><a href="windenergie-1.html"><i class="fa fa-check"></i><b>A</b> Windenergie</a>
+<ul>
+<li class="chapter" data-level="A.1" data-path="windenergie-1.html"><a href="windenergie-1.html#een-volmaakte-windmolen"><i class="fa fa-check"></i><b>A.1</b> Een volmaakte windmolen</a></li>
+<li class="chapter" data-level="A.2" data-path="windenergie-1.html"><a href="windenergie-1.html#windmolens-in-de-praktijk"><i class="fa fa-check"></i><b>A.2</b> Windmolens in de praktijk</a></li>
+<li class="chapter" data-level="A.3" data-path="windenergie-1.html"><a href="windenergie-1.html#berekenen-van-opbrengst"><i class="fa fa-check"></i><b>A.3</b> Berekenen van opbrengst</a></li>
+<li class="chapter" data-level="A.4" data-path="windenergie-1.html"><a href="windenergie-1.html#berekenen-van-lopend-tekort"><i class="fa fa-check"></i><b>A.4</b> Berekenen van lopend tekort</a></li>
+</ul></li>
+<li class="chapter" data-level="B" data-path="zonne-energie-1.html"><a href="zonne-energie-1.html"><i class="fa fa-check"></i><b>B</b> Zonne-energie</a>
+<ul>
+<li class="chapter" data-level="B.1" data-path="zonne-energie-1.html"><a href="zonne-energie-1.html#berekenen-van-opbrengst-1"><i class="fa fa-check"></i><b>B.1</b> Berekenen van opbrengst</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="./faq.html" target="blank">FAQ</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">De energietransitie doorgerekend</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="zonne-energie" class="section level1" number="3">
+<h1><span class="header-section-number">3</span> Zonne-energie</h1>
+<p>Het doel van dit hoofdstuk is een schatting te geven van de energie-opbrengst en het ruimtegebruik van zonne-energie. Daarnaast wordt gekeken naar de gevolgen van fluctuaties in de opbrengst van zonne-energie.</p>
+<div id="variatie-in-zonneschijn" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> Variatie in zonneschijn</h2>
+<p>Figuur 3.1 laat op dagbasis zien hoeveel straling Nederland in 2007 ontving, hetzelfde jaar als er bij wind werd gekozen. Het lijkt een jaar te zijn met een vrij slechte zomer (weinig zon), maar het algemene beeld is vergelijkbaar met andere jaren. Op de breedtegraad van Nederland varieert de invalshoek van de zonnestraling gedurende het jaar aanzienlijk. De zon staat hoog aan de hemel in de zomer en laag in de winter. Dat is te zien aan de golfbeweging in de grafiek, die een beetje een sinusoïde vorm heeft. Het seizoenseffect is groot en tegelijkertijd regelmatig. Het andere regelmatige ritme wat betreft de intensiteit van de straling, niet zichtbaar in deze grafiek, is natuurlijk het dag-nachtritme. ’s Nachts is er geen straling te verwachten; op het midden van de dag het meeste. Tot zover is het allemaal heel voorspelbaar.</p>
+<p><img src="04-Zonne-energie_files/figure-html/zon2007-1.png" width="480" style="display: block; margin: auto;" /></p>
+<p>Figuur 3.1 laat ook zien dat er, hier met name in de zomer, flinke gaten vallen in de hoeveelheid ontvangen zonnestraling. Dat heeft te maken met het weer. Bewolking heeft een grote invloed op de opbrengst van zonnecellen. Als het bewolkt is, is het niet ongewoon dat een zonnecel maar een tiende levert van wat deze in volle zon zou leveren (<a href="https://www.withouthotair.com/download.html">MacKay</a>, p45). Het weer kan dus een grote invloed hebben op de opbrengst van zonnecellen.</p>
+</div>
+<div id="de-energie-opbrengst-van-zonnecellen" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> De energie-opbrengst van zonnecellen</h2>
+<p>Zonnecellen zetten straling om in elektriciteit. De relatie tussen energie-opbrengst van zonnecellen en de instralingswaarden zoals deze bijvoorbeeld door het KNMI worden gegeven, is betrekkelijk eenvoudig. De opbrengst is gelijk aan het rendement van het zonnepaneel maal de hoeveelheid ingevallen straling. Heeft een bepaald soort zonnecellen bijvoorbeeld een rendement van 20% en is de hoeveelheid ingevallen straling gelijk aan 1100 kWh per m<sup>2</sup> per jaar, dan zal een vierkante meter van deze zonnecellen in een jaar 220 kWh opbrengen. In tegenstelling tot wind is de relatie tussen straling en opbrengst bij zon lineair. Dat maakt de zaak een stuk eenvoudiger.</p>
+<p>Een belangrijke vraag is daarmee welk rendement er voor zonnecellen verwacht mag worden. Een hoger rendement bepaalt de hoeveelheid oppervlak dat voor zonnecellen nodig is. Voor de <em>variatie</em> in de opbrengst maakt het niet uit, die blijft hetzelfde of er nu meer of minder efficiënte zonnecellen worden gebruikt.</p>
+<p>Gewone zonnepanelen, zoals die nu beschikbaar zijn, zijn gevoelig voor licht van slechts één bepaalde golflengte (het paneel bestaat uit zogenaamde enkelvoudige of <em>single-junction</em> cellen). Het maximaal theoretisch rendement van een enkelvoudige cel is gebonden aan de <a href="https://en.wikipedia.org/wiki/Shockley%E2%80%93Queisser_limit">Shockley-Queisser limiet</a> van ongeveer 34%. Commerciële cellen halen nu tot 24% rendement. Dat is al dicht in de buurt van de te verwachten praktische limiet van <a href="https://en.wikipedia.org/wiki/Solar_cell">ongeveer 26%</a>.</p>
+<p>Er bestaan ook cellen met <a href="https://en.wikipedia.org/wiki/Multi-junction_solar_cell">meervoudige juncties</a> die een hoger rendement hebben dan cellen met een enkelvoudige junctie. Deze cellen bestaan uit verschillende materialen, waardoor er in principe uit verschillende golflengtes energie kan worden gewonnen. De theoretische limiet, bij een stapeling van een oneindige hoeveelheid lagen, is zo’n 69%. Het beste gerealiseerde rendement tot nu toe is 47%, maar daarbij werd zonlicht geconcentreerd. Het concentreren kost ruimte: een hoger rendement betekent dan ook niet automatisch een hogere opbrengst per vierkante meter. Zie <a href="https://en.wikipedia.org/wiki/Solar_cell_efficiency">wikipedia/ solar cell efficiency</a> en verdere verwijzingen daarin.</p>
+<p>
+Voordat er gesproken kan worden over opbrengst, moet er gekozen worden van welk rendement er moet worden uitgegaan. De keuze zal ergens moeten liggen tussen de theoretische limiet van 69% voor meervoudige zonnecellen en 6% voor goedkope silicium-gebaseerde zonnecellen. Bij de berekeningen hier wordt uitgegaan van (duurdere) zonnecellen met een rendement van 20% (zie ook bijlage B.1 <em>Berekenen van opbrengst</em>). Dat zijn zonnecellen met een hoog rendement, weliswaar duur, maar wel algemeen beschikbaar.</p>
+<p>De instralingsgegevens van het KNMI uit figuur 3.1 kunnen gebruikt worden om de opbrengst te berekenen van een vierkante kilometer zonnecellen. Er wordt van uitgegaan dat de zonnecellen tegen elkaar aan geplaatst worden, zonder enige tussenruimte. Figuur 3.2 toont deze energieopbrengst.</p>
+<p><img src="04-Zonne-energie_files/figure-html/opbrengstzon2007-1.png" width="480" style="display: block; margin: auto;" /></p>
+<p>De zonnestraling die Nederland ontvangt is volgens het <a href="https://www.knmi.nl/over-het-knmi/nieuws/zonnestraling-in-2019">KNMI</a> doorgaans rond 1000 à 1100 kWh per m<sup>2</sup> per jaar. De berekende jaaropbrengst voor 2007, getoond in figuur 3.2, komt uit op 211 kWh voor een vierkante meter zonnepaneel. Voor een zonnepaneel met een effciëntie van 20% komt dat mooi in de buurt voor een gemiddelde instraling van iets boven de 1000 kWh. Het gebruik van een efficiënter paneel zou de opbrengst in figuur 3.2 verhogen, maar de vorm van de grafiek niet veranderen. Met andere woorden: de hoeveelheid fluctuatie blijft gelijk.</p>
+</div>
+<div id="ruimtegebruik-1" class="section level2" number="3.3">
+<h2><span class="header-section-number">3.3</span> Ruimtegebruik</h2>
+<p>Laten we, net zoals bij windenergie werd gedaan, een denkbeeldig scenario nemen om een inschatting te kunnen maken van de hoeveelheid benodigde ruimte voor zonnecellen. Stel dat alle energie die Nederland gebruikt weer door een duurzame bron wordt opgewekt, ditmaal door zonne-energie.</p>
+<p>Net zoals bij wind wordt ook hier weer een periode van 10 jaar gebruikt, van 2006 tot en met 2015. Aan de hand van de gegevens van het KNMI wordt iedere 10 minuten, op basis van de straling in dat tijdsvak, de energie-opbrengst uitgerekend van een vierkante kilometer zonnecellen (belegd met panelen met een rendement van 20%). Als in deze periode van 10 jaar alle opbrengsten bij elkaar worden opgeteld en vervolgens een jaargemiddelde wordt berekend, dan volgt daaruit een opbrengst van 218 miljoen kWh per km<sup>2</sup>.</p>
+<p>Dan kan nu worden berekend hoeveel ruimte er nodig zou zijn in een scenario waarbij Nederland al zijn energie opwekt met behulp van de zon. Er wordt daarbij wederom vanuit gegaan dat de panelen zonder tussenruimte tegen elkaar aan geplaatst worden. Het totale energieverbruik van Nederland in 2019 was 706 miljard kWh (zie hoofdstuk 1).</p>
+<p>Hoeveel vierkante kilometer zonnepanelen zou er nodig zijn om het gehele energiegebruik van Nederland te dekken? Daarvoor delen we ons energieverbruik door de opbrengst van zonne-energie per vierkante kilometer:</p>
+<p><span class="math display">\[ \frac {706\; miljard \; kWh} {218 \; miljoen \; kWh/km^2} = 3237 \; km^2  \]</span>
+
+Deelt men het oppervlak benodigd voor zonnecellen door het oppervlak van Nederland dan blijkt dat</p>
+<p><span class="math display">\[ \frac {3237 \; km^2} {41873 \; km^2} = 7.7 \% \]</span>
+
+van Nederland nodig is om ons hele energieverbruik te dekken. Dat is grofweg de grootte van de provincie Zuid-Holland. Daarmee is zonne-energie veel efficiënter dan windenergie. De opbrengst per vierkante kilometer is veel hoger.</p>
+</div>
+<div id="opbrengstfluctuaties-1" class="section level2" number="3.4">
+<h2><span class="header-section-number">3.4</span> Opbrengstfluctuaties</h2>
+<p>De opbrengst van een zonnecel varieert met de hoeveelheid ingevallen straling op een bepaald moment. Bij windenergie bleek deze variatie tot substantiële tekorten te leiden. Hoe zit dat bij zon?</p>
+<p>Figuur 3.3 geeft de opbrengstvariatie weer op maandbasis voor het jaar 2007. De aanname daarbij is weer dat Nederland iedere maand een gelijke hoeveelheid energie gebruikt en de panelen over het hele jaar genomen de vraag dekken.</p>
+<p><img src="04-Zonne-energie_files/figure-html/opbrengstvariatiezon2007-1.png" width="480" style="display: block; margin: auto;" /></p>
+<p>Er blijkt een duidelijk seizoenseffect uit figuur 3.3. Het is een beetje een ongewoon jaar in de zin dat de meeste opbrengst niet in juni en juli valt, hetgeen aangeeft dat ook weersinvloeden een factor van belang zijn. In tegenstelling tot wind is hier zoals verwacht de zomer de beste periode. In de winter zakt de opbrengst daarentegen tot ver onder het gemiddelde. Januari brengt 1.8% op, dat is 78% minder dan gemiddeld. Mei is een maand met overvloed, hier kan 72% meer dan gemiddeld worden geproduceerd.</p>
+<p>Figuur 3.3 maakt de seizoensinvloeden inzichtelijk, maar de opbrengstvariatie die binnen een maand optreedt blijft verborgen. Figuur 3.4 toont de opbrengst op dagbasis voor de maand september in 2007. In totaal had deze maand een (bijna) gemiddelde opbrengst, dus in principe dekkend voor het energieverbruik in die maand.</p>
+<p><img src="04-Zonne-energie_files/figure-html/opbrengstvariatiezon2007.d.plot-1.png" width="480" style="display: block; margin: auto;" /></p>
+<p>Figuur 3.4 laat echter zien dat de maand september zelf op dagbasis nog aanzienlijke variatie kende. In deze september waren er 6 dagen waar er ruim 50% meer dan gemiddeld kon worden geproduceerd. Omgekeerd kwam er op 4 dagen in deze maand minder dan de helft van het gemiddelde binnen.</p>
+<div id="zonarme-maanden" class="section level3" number="3.4.1">
+<h3><span class="header-section-number">3.4.1</span> Zonarme maanden</h3>
+<p><img src="04-Zonne-energie_files/figure-html/opbrengstvariatie2018j-1.png" width="576" style="display: block; margin: auto;" /></p>
+<p>De grootste tekorten zijn te verwachten in maanden met weinig zon. Dat is doorgaans in de winter. Figuur 3.5 laat januari van 2018 zien. Aan het wit onder de stippellijn is te zien dat er een groot tekort aan zon is. Er zijn in de hele maand slechts 46 uren waarin de zon voldoende opbrengt om aan de vraag te voldoen. Januari telt in totaal 744 uren. Dat betekent dat er 94% van de tijd een tekort is.</p>
+<p>Net zoals dat bij wind het geval was, blijkt ook bij zon dat vraag en aanbod niet goed op elkaar zijn afgestemd. Dat tekort is vooral ’s nachts en in de winter groot, maar ook een bewolkte dag kan voor een tekort zorgen. De tekorten zijn dieper en langer dan bij windenergie. Ook hier zullen deze moeten worden opgevangen om de energievoorziening op peil te houden.</p>
+</div>
+</div>
+<div id="fluctuaties-opvangen-met-opslag-1" class="section level2" number="3.5">
+<h2><span class="header-section-number">3.5</span> Fluctuaties opvangen met opslag</h2>
+<p>De variatie in opbrengst van zonne-energie kan, net zoals dat bij windenergie werd gedaan, met behulp van een vorm van energie-opslag vereffend worden. Eerst maar kijken naar opslag. Figuur 3.6 simuleert de opbrengst van zonne-energie voor een periode van tien jaar, gebaseerd op de tienminutendata van het KNMI. De hoeveelheid zonnecellen wordt weer zodanig gekozen dat de totaalopbrengst gelijk is aan het nationaal verbruik.</p>
+<p><img src="04-Zonne-energie_files/figure-html/infographic_opslag_zon-1.png" width="720" style="display: block; margin: auto;" /></p>
+<p>Zowel de productie van energie in het bovenste staafdiagram als het verloop van de laadtoestand in het onderste staafdiagram vertonen grote regelmaat. Het is opvallend dat het patroon zo regelmatig is, veel regelmatiger dan voor windfluctuaties het geval was. Op maandbasis is de zoninstraling redelijk voorspelbaar (alhoewel er op dagbasis aanzienlijke variatie is).</p>
+<p>In de onderste figuur wordt de laadtoestand weergegeven van een denkbeeldige accu. Deze denkbeeldige accu heeft een capaciteit ter grootte van 37% van het jaarlijks Nederlands energieverbruik. Dat is precies voldoende om in deze tien jaar alle zonarme perioden op te kunnen vangen. De accu volgt het ritme van de seizoenen. In de late zomer is de accu op z’n volst en in de winter wordt de laagste stand bereikt.</p>
+<p>Merk op dat in 2009 de laadtoestand even de 0% raakt: de accu is nu helemaal leeg. Kleiner kan de accu dus niet zijn, anders onstaat er een energietekort. De capaciteit van de accu in deze simulatie komt overeen met 37% van het jaarverbruik. Dat is gelijk aan ongeveer vier maanden Nederlands energiegebruik.</p>
+</div>
+<div id="zonne-energie-in-combinatie-met-een-hulpbron" class="section level2" number="3.6">
+<h2><span class="header-section-number">3.6</span> Zonne-energie in combinatie met een hulpbron</h2>
+<p>Vervolgens kan er gekeken worden naar dezelfde periode van tien jaar met dezelfde fluctuaties in opbrengst, maar ditmaal wordt er gebruik gemaakt van een hulpbron om de tekorten op te vangen. Figuur 3.7 toont weer maandtotalen, gebaseerd op tijdsvakken van 10 minuten.</p>
+<p><img src="04-Zonne-energie_files/figure-html/infographic_hulpbronnen-1.png" width="720" style="display: block; margin: auto;" /></p>
+<p>
+Het volgende beeld onstaat. Door energie bij te draaien wordt iedere maand inderdaad precies aan de energiebehoefte van Nederland voldaan. Zonne-energie (geel) en hulpbron (blauw) tezamen reiken tot de stippellijn: het verbruik van Nederland. Tevens is te zien dat er zonne-energie onbenut blijft, de grijze staven. Dat komt omdat in een scenario met enkel een hulpbron, dus zonder opslag, deze energie niet inzetbaar is. Het verlies van ‘nuttige’ capaciteit is groot.</p>
+<p>Wie figuur 3.6 vergelijkt met 3.7, valt het misschien op dat de overproductie in 3.7 wel groter lijkt dan het surplus in figuur 3.6. Bij de telling in figuur 3.7 wordt er onderscheid gemaakt tussen tijdsvakken met een overschot en tijdsvakken met een tekort. In figuur 3.7 is de optelling van de gele staven en de grijze staven gelijk aan de hoogte van maandstaven in figuur 3.6. Dit onderscheid ontbreekt in figuur 3.6. De extra informatie die figuur 3.7 biedt, maakt duidelijk hoeveel van de opbrengst surplus was, en hoeveel direct aan gebruikers geleverd kon worden.</p>
+<p>Zonne-energie zorgt in totaal voor 38% van de jaarlijkse energie en de hulpbron moet dus 62% van de benodigde energie bijdraaien.</p>
+<p>Ook hier geldt, net zoals werd geconstateerd bij windenergie, dat op momenten dat de zon niet schijnt, de hulpbron de totale last van de energievraag op z’n schouders krijgt. De hulpbron moet ook hier het vermogen hebben om de nationale vraag te dekken en nis daarmee op zichzelf ook dekkend voor onze energiebehoefte.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="windenergie.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="opslag.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": null,
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/04-Zonne-energie.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["De energietransitie doorgerekend.pdf", "De energietransitie doorgerekend.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>De energietransitie doorgerekend</title>
+  <title>B Zonne-energie | De energietransitie doorgerekend</title>
   <meta name="description" content="Rekenen aan de energietransitie, met name op de fluctuerende opbrengsten van hernieuwbare energiebronnen." />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="De energietransitie doorgerekend" />
+  <meta property="og:title" content="B Zonne-energie | De energietransitie doorgerekend" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="energiemix" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="De energietransitie doorgerekend" />
+  <meta name="twitter:title" content="B Zonne-energie | De energietransitie doorgerekend" />
   
   <meta name="twitter:description" content="Rekenen aan de energietransitie, met name op de fluctuerende opbrengsten van hernieuwbare energiebronnen." />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
+<link rel="prev" href="windenergie-1.html"/>
 
-<link rel="next" href="voor-knud.html"/>
 <script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -178,41 +178,108 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">De energietransitie doorgerekend</h1>
-<h2 class="subtitle"><em>Welke samenstelling van zon, wind en kernenergie levert een haalbare mix op?</em></h2>
-<p class="author"><em>P. Maas</em></p>
-<p class="date"><em>Proefversie 2.1, 2022-04-14</em></p>
-</div>
-<div id="aan-de-proeflezer" class="section level1 unnumbered">
-<h1>Aan de proeflezer</h1>
-<p>Welkom! Dit project is een poging uit te vinden hoe de energietransitie er uit ziet, straks, als deze voltooid is. In principe zou er dan alleen nog CO<sub>2</sub>-vrij energie worden geproduceerd. Welke samenstelling van wind-, zon- en kernenergie levert een haalbare energiemix op? Wat werkt?</p>
-<p>Dit project is onstaan uit een groepje geïnteresseerde mensen die zich afvroegen waar Nederland met de energietransitie op weg naar toe is. Een aantal daarvan hadden het fantastische boek van natuurkundeprof David MacKay – <a href="https://www.withouthotair.com/download.html"><em>Sustainable energy without the hot air</em></a> – gelezen en daaruit geleerd dat de meeste vormen van duurzame energie een lage energiedichtheid hebben. Tweederde van de groene energie werd in Nederland in 2019 bijvoorbeeld nog opgewekt door verbranding van gewassen (o.a. houtsnippers). Gewassen hebben een bedroevend lage energiedichtheid en het leek uitgesloten dat we daarmee straks <em>net-zero</em> zouden bereiken. Waarom zetten we er dan op in?</p>
-<p>Er lijkt niet echt een plan te zijn. Wat we niet konden ontdekken, in Nederland, maar ook in de rest van de rijke wereld, is met welke middelen we <em>net-zero</em> daadwerkelijk zouden kunnen bereiken. Dat is eigenlijk vreemd, want de transitie vervangt fossiele energiebronnen met een hoge energiedichtheid door duurzame bronnen die een lage dichtheid hebben. Nederland is een klein land, en veel ruimte heeft al een bestemming. Zouden we het redden met windmolens? Met zon?</p>
-<p>Het niet hebben van een plan kan grote gevolgen hebben. We mikken op ‘klimaatdoelen’ kennelijk onder andere door in te zetten op het verbranden van houtsnippers, maar dat kan niet de eindoplossing zijn (Bedenk dat Europa in de middeleeuwen ontbost raakte omdat voor koken, verwarming en industrie hout de enige brandstof was. Hoe zouden we dat nu met een veel hoger verbruik wel voor elkaar moeten krijgen?). Het behalen van een kleine reductie brengt ons niet bij <em>net-zero</em>. Zelfs het halen van een klimaatdoel brengt ons niet automatisch bij <em>net-zero</em>. Is investering in techniek waarmee het einddoel niet wordt gehaald dan eigenlijk wel een slimme zet? Kan dat geld niet beter worden ingezet voor techniek die toekomst heeft, die ons op lange termijn tot <em>net-zero</em> kan leiden?</p>
-<p>Langzaam kwam de realisatie dat schaal in de energietransitie belangrijk is. Het is onvoldoende een bron te selecteren enkel omdat deze duurzaam is. Kan de bron ook voldoende worden opgeschaald om er <em>net-zero</em> mee te bereiken? Het is belangrijk om na te denken over hoeveelheid, bijvoorbeeld hoeveel windmolens en zonnecellen er nodig zijn en waar je die neerzet.</p>
-<p>Een tweede punt dat het groepje opviel is dat de twee opties waar nu voor wordt gekozen, zon en wind, lang niet altijd volop energie leveren. Wat doe je met windstilte? Opgevallen was dat vanaf eind september de zonnecellen op de boot niet meer voldoende waren om het verbruik te dekken en de accu’s vol te krijgen, waar dat in de zomer nog probleemloos lukte. In de winter was men afhankelijk van de walstroom. Hoe werkt dat eigenlijk op het niveau van Nederland, als een heel land permanent energie nodig heeft?</p>
-<p>Die vragen waren bij MacKay onderbelicht gebleven. Er wordt door hem kort gerekend aan de problematiek van uitval, maar niet voor de energiehuishouding van een heel land, voor een representatieve periode van vele jaren. Daarmee werd het huidige project eigenlijk geboren. Zou je dat voor Nederland kunnen schatten? Zou je kunnen schatten hoeveel extra molens je nodig zou hebben om uitval te voorkomen, of hoeveel accu’s je nodig zou hebben om energie in te kunnen opslaan? Het bleek dat de KNMI daar geweldige data voor heeft: zoninstraling en windsnelheid per tijdsvakken van tien minuten, en dat over de afgelopen tientallen jaren. Dat leverde een berg met data waar een schatting mee gemaakt kon worden. Er werd programmacode geschreven om het uit te rekenen. De conclusies die daaruit konden worden getrokken hebben hun weerslag gevonden in deze tekst.</p>
-<p>Helaas is Knud Boucher, de andere geestelijke vader van dit project, niet meer onder ons. Hij had een zeldzaam breed blikveld die werd gecombineerd met een kritische houding zonder daarbij de welwillendheid te verliezen. Hij wilde echt een oplossing. Als je de energietransitie zou willen laten slagen, hoe doe je dat dan zonder dat daarbij fysieke grenzen overschreden worden? Wat zou een verstandige aanpak zijn?</p>
-<p>Onze inzet, die van Knud en die van mij, was om onderzoek te doen naar de mogelijkheden, zonder daarbij te kiezen voor een bepaalde uitvoering. Dat wordt graag overgelaten aan de democratische besluitvorming. Sommigen willen geen kernenergie, anderen vinden windmolens lelijk. Dat moet ieder voor zich weten, en wij met z’n allen op een of andere manier zien te besluiten. De tekst wil wat dat betreft neutraal zijn. Het gaat ons om de randvoorwaarden bij een bepaalde energiemix. Daarvoor is er gerekend aan verschillende inrichtingen van een energiemix. Wij hoopten te leren welke inrichtingen haalbaar zijn. Met haalbaar wordt bedoeld: het bereiken van <em>net-zero</em>, zodanig dat Nederland zonder uitval van energie wordt voorzien. De insteek hier is om een eenvoudig rekenmodel te gebruiken om een schatting te maken van de schaal van de onderneming. Misschien geeft dat een indruk wat betere en wat minder goede oplossingen zijn.</p>
-<p>Niet iedere duurzame energiebron wordt in het model meegenomen. Van de niet-continue energiebronnen leveren wind en zon het meeste op. Andere mogelijke bronnen zoals bijv. gewassen of aardwarmte werden minder zinvol geacht om mee te nemen wegens de lage opbrengst. De lezer wordt van harte aangeraden om MacKay er op na te slaan om zelf een indruk te krijgen van de potentie van verschillende energiebronnen. In tegenstelling tot dit stuk is MacKay vrij compleet. Hetzelfde geldt voor opslagmethoden, waar er drie van worden bekeken (accu’s, spaarbekkens en waterstofopslag). Andere vormen zoals compressed air storage of ondergrondse opslagbekkens schalen slecht en worden minder zinvol geacht. Het kan natuurlijk zijn dat hierbij inschattingfouten zijn gemaakt en er een mooie vorm van opslag of energieopwekking ten onrechte genegeerd is. Hopelijk kan een toekomstige versie van de tekst daar dan op worden aangepast.</p>
-<p>Natuurlijk ben je als (proef)lezer van harte uitgenodigd te reageren. Ik zou vooral willen dat de tekst neutraal en betrouwbaar is. <em>Neutraal</em> in de zin dat er naar feiten wordt gekeken. Als de lezer ergens het gevoel krijgt dat er een keuze wordt opgedrongen, dan hoor ik het graag, want dat is niet de bedoeling. <em>Betrouwbaar</em> in de zin dat de tekst en conclusies afleidbaar zijn. Bronverantwoording voor de gebrachte feiten moet betrouwbaar zijn. Naast MacKay wordt Wikipedia vaak gebruikt als bron. Voor factuele zaken wordt Wikipedia betrouwbaar genoeg geacht. Het is in ieder geval een openbare bron die makkelijk verder te toetsen is. Mochten er bepaalde feiten niet kloppen, of er een betere bronvermelding mogelijk zijn, dan kan een toekomstige versie daarop worden aangepast. Ik zou het geweldig vinden als de gebruikte feiten en bronnen in dit verhaal steeds beter geborgd zouden worden. De programmacode van de gebruikte berekeningen moet nog openbaar op internet breikbaar worden gemaakt, zodat ook deze gecontroleerd kan worden. Ik zou graag nog een onafhankelijk controleur over de schouders mee laten kijken of alle berekeningen kloppen. Zou je dat willen doen of ken je iemand, dan houd ik me zeer aanbevolen.</p>
-<p>Tot slot: vind je het onderwerp belangrijk en de tekst iets toevoegen, geef het dan door. Voor wie de printversie heeft gekregen: er is ook een elektronische versie beschikbaar die zich makkelijker laat verspreiden.</p>
-<p>
-Dank voor het lezen!</p>
-<p>
-Pascal Maas,</p>
-<p>
-Januari 2022</p>
+<div id="zonne-energie-1" class="section level1" number="7">
+<h1><span class="header-section-number">B</span> Zonne-energie</h1>
+<div id="berekenen-van-opbrengst-1" class="section level2" number="7.1">
+<h2><span class="header-section-number">B.1</span> Berekenen van opbrengst</h2>
+<p>Om de opbrengst van zonnecellen te berekenen wordt stralingsdata van het KNMI gebruikt, gemeten nabij meetmast Cabauw, midden in het land. De data geeft voor het tijdsvak van 10 minuten de gemiddelde globale straling in Watt per vierkante meter. Aan de hand van deze data wordt voor ieder tijdsvak van 10 minuten de energie-opbrengst berekend. Voor langere perioden wordt de opbrengst gesommeerd, bijvoorbeeld de dagopbrengst is gelijk aan de som van de 144 vakken van 10 minuten in die dag. In tabel B.1 ziet men enige uitkomsten zoals deze in de berekeningen zijn gebruikt.</p>
+<table class="table" style="font-size: 10px; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">
+<span id="tab:datavoorbeeld2">Table B.1: </span>Voorbeeld van opbrengstgegevens
+</caption>
+<thead>
+<tr>
+<th style="text-align:right;">
+Tijd
+</th>
+<th style="text-align:right;">
+straling (W/m2)
+</th>
+<th style="text-align:right;">
+Opbrengst zonnecel (kWh/km2)
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+2007-04-01 09:50:00
+</td>
+<td style="text-align:right;width: 2cm; ">
+575.48
+</td>
+<td style="text-align:right;width: 2cm; ">
+19182.72
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2007-04-01 10:00:00
+</td>
+<td style="text-align:right;width: 2cm; ">
+589.89
+</td>
+<td style="text-align:right;width: 2cm; ">
+19662.86
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2007-04-01 10:10:00
+</td>
+<td style="text-align:right;width: 2cm; ">
+597.83
+</td>
+<td style="text-align:right;width: 2cm; ">
+19927.65
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2007-04-01 10:20:00
+</td>
+<td style="text-align:right;width: 2cm; ">
+608.60
+</td>
+<td style="text-align:right;width: 2cm; ">
+20286.79
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2007-04-01 10:30:00
+</td>
+<td style="text-align:right;width: 2cm; ">
+620.90
+</td>
+<td style="text-align:right;width: 2cm; ">
+20696.61
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2007-04-01 10:40:00
+</td>
+<td style="text-align:right;width: 2cm; ">
+630.46
+</td>
+<td style="text-align:right;width: 2cm; ">
+21015.29
+</td>
+</tr>
+</tbody>
+</table>
+<p>In de tekst wordt uitgegaan van zonnepanelen met een rendement van 20%. De opbrengst wordt weergegeven in kilowattuur per vierkante kilometer. De straling wordt door het KNMI in tijdsvakken van 10 minuten weergegeven in watt per vierkante meter (W/m<sup>2</sup>). De berekeningen werken verder met de kilowattuur (kWh), dus de waarde in watt voor de 10 minuten wordt eerst omgezet naar wattuur. Daartoe wordt de waarde van de kolom straling gedeeld door 6: 575,48 W / 6 = 95,91 Wh (per 10 min). Vervolgens wordt er gedeeld door 1.000 om van W naar kW te komen en dan maal een miljoen om van vierkante meter naar vierkante kilometer te komen: (95,5 / 1.000) * 1.000.000 = 95.913,33 kWh/km<sup>2</sup>. Dan, omdat de panelen een efficiëntie van 20% hebben, blijft daar een vijfde van over. Daarmee wordt de uitkomst in de kolom ‘opbrengst’ verkregen: 95.913,33 * 20% = 19.182,72 kWh/km<sup>2</sup>.</p>
 
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
+<a href="windenergie-1.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
-<a href="voor-knud.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -233,7 +300,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/USERNAME/REPO/edit/BRANCH/index.Rmd",
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/08-Appendix.Rmd",
 "text": "Edit"
 },
 "history": {
