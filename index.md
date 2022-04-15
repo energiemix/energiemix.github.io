@@ -1,13 +1,15 @@
 --- 
 title: "De energietransitie doorgerekend"
 subtitle: "Welke samenstelling van zon, wind en kernenergie levert een haalbare mix op?"
-date: "Proefversie 2.1, 2022-04-14"
+date: "Proefversie 2.1, 2022-04-15"
 author: "P. Maas"
 site: bookdown::bookdown_site
 documentclass: book
-description: Rekenen aan de energietransitie, met name op de fluctuerende opbrengsten van hernieuwbare energiebronnen.
+description: Welke samenstelling van zon, wind en kernenergie levert een haalbare mix op?
 link-citations: yes
 github-repo: energiemix
+url: energiemix.github.io
+cover-image: DEDvoorkant.png
 dev: "cairo_pdf"
 indent: true
 papersize: a4
@@ -20,7 +22,8 @@ urlcolor: CornflowerBlue # Black
 <!-- \thispagestyle{empty} -->
 
 <!-- Render PDF: -->
-<!-- Ga naar 06-Simulaties en verander knitr_compile_formaat naar "latex" -->
+<!-- HOEFT NIET MEER: Ga naar 06-Simulaties en verander knitr_compile_formaat naar "latex" -->
+<!-- verwijder 00-Toewijding.Rmd uit _bookdown.yml -->
 <!-- bookdown::render_book("index.Rmd", "bookdown::pdf_book") -->
 
 <!-- === VERSCHILLEN TUSSEN PRINT EN PDF === -->
@@ -34,7 +37,7 @@ urlcolor: CornflowerBlue # Black
 <!-- Ga naar 06-Simulaties en verander knitr_compile_formaat naar "html" -->
 <!-- bookdown::render_book() -->
 <!-- Publiceren naar energiemix.github.io:
-     cd username.github.io
+     cd energiemix.github.io
      git add --all
      git commit -m "beschrijf commit"
      git push -u origin main
