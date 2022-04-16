@@ -9,7 +9,7 @@ description: Welke samenstelling van zon, wind en kernenergie levert een haalbar
 link-citations: yes
 github-repo: energiemix
 url: energiemix.github.io
-cover-image: DEDvoorkant.png
+cover-image: DED_sm.png
 dev: "cairo_pdf"
 indent: true
 papersize: a4
